@@ -1,0 +1,36 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "1 month to create a personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack serve --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darmawan06/my-portfolio.git"
+  },
+  "author": "Dikdik Darmawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darmawan06/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/darmawan06/my-portfolio#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.7.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1"
+  },
+  "dependencies": {}
+}
