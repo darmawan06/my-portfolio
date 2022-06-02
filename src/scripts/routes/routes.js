@@ -1,7 +1,9 @@
-import HomePage from '../views/pages/homepage';
+import homepage from '../views/pages/homepage';
+import portfolio from '../views/pages/portfolio';
 
 const routes = {
-    '/': HomePage,
+    '/': homepage,
+    '/portfolio': portfolio,
 };
 
 export default routes;

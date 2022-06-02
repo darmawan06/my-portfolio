@@ -1,6 +1,6 @@
 const header = {
 	init(){
-		return `ss`;
+		return ``;
 	},
 	afterRender(){
 		return ``;

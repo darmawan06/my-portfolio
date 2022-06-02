@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const tailwindcss = require('tailwindcss');
+const webpack = require("webpack");
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
@@ -45,6 +46,10 @@ module.exports = {
           noErrorOnMissing: true,
         },
       ],
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     }),
   ],
   mode : "development"
