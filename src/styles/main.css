@@ -1,13 +1,74 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans+Narrow&display=swap');
 @layer base {
 }
 
 @layer components {
+
 }
 
+:root{
+	--color-1 :#222831;
+	--color-2 :#393E46;
+	--color-3 :#D65A31;
+	--color-4 :#EEEEEE;
+}
 html{
 	overflow-x: hidden;
+}
+.font-h1{
+	font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.font-h3{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.bg-color-1{
+	background: var(--color-1);
+}
+
+.bg-color-2{
+	background: var(--color-2);
+}
+.bg-color-3{
+	background: var(--color-3);
+}
+.bg-color-4{
+	background: var(--color-4);
+}
+
+.text-color-1{
+	color: var(--color-1);
+}
+.text-color-2{
+	color: var(--color-2);
+}
+.text-color-3{
+	color: var(--color-3);
+}
+.text-color-4{
+	color: var(--color-4);
+}
+
+.border-color-1{
+	border-color: var(--color-1);
+}
+.border-color-2{
+	border-color: var(--color-2);
+}
+.border-color-3{
+	border-color: var(--color-3);
+}
+.border-color-4{
+	border-color: var(--color-4);
+}
+
+.max-rows {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }

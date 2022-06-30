@@ -1,24 +1,24 @@
 
 const navbar = {
-	render({linkPage,linkCode}){
+	render({linkPage,linkSkills}){
 		return `
 			<div class="grid grid-rows-8 grid-cols-8 m-auto w-2/4 h-2/4 navbar hidden">
 				<!-- 1 -->
 				<div class="w-full h-full text-center row-span-3"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-3">
-					<a href="${linkCode}" class="m-auto">
-						<i class="fa-solid fa-code text-white text-center m-auto text-3xl"></i>
+					<a href="${linkSkills}" class="m-auto">
+						<i class=" fa-solid fa-code text-color-3 text-center m-auto text-3xl"></i>
 					</a>
 				</div>
 				<div class="w-full h-full text-center col-span-2 row-span-3"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-3">
-					<i class="fa-solid fa-code-merge text-white text-center m-auto text-3xl"></i>
+					<i class="hover:text-yellow-200 fa-solid fa-code-merge text-color-3 text-center m-auto text-3xl"></i>
 				</div>
 				<div class="w-full h-full text-center row-span-3"></div>
 
 				<!-- 2 -->
 				<div class="w-full h-full text-center flex col-span-2 row-span-2">
-					<i class="fa-brands fa-github text-white text-center m-auto text-3xl"></i>
+					<i class="hover:text-yellow-200 fa-brands fa-github text-color-3 text-center m-auto text-3xl"></i>
 				</div>
 				<div class="w-full h-full text-center row-span-2"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-2">
@@ -32,17 +32,17 @@ const navbar = {
 				</div>
 				<div class="w-full h-full text-center row-span-2"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-2">
-					<i class="fa-brands fa-instagram text-white text-center m-auto text-3xl"></i>
+					<i class="hover:text-yellow-200 fa-brands fa-instagram text-color-3 text-center m-auto text-3xl"></i>
 				</div>
 				
 				<!-- 3 -->
 				<div class="w-full h-full text-center row-span-3"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-3">
-					<i class="fa-solid fa-address-card text-white text-center m-auto text-3xl"></i>
+					<i class="hover:text-yellow-200 fa-solid fa-address-card text-color-3 text-center m-auto text-3xl"></i>
 				</div>
 				<div class="w-full h-full text-center col-span-2 row-span-3"></div>
 				<div class="w-full h-full text-center flex col-span-2 row-span-3">
-					<i class="fa-brands fa-linkedin text-white text-center m-auto text-3xl"></i>
+					<i class="hover:text-yellow-200 fa-brands fa-linkedin text-color-3 text-center m-auto text-3xl"></i>
 				</div>
 				<div class="w-full h-full text-center row-span-3"></div>
 
