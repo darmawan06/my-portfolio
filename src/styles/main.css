@@ -69,6 +69,22 @@ html{
 .max-rows {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
+}
+
+
+.scrollModification::-webkit-scrollbar {
+	width: 10px;
+}
+
+.scrollModification::-webkit-scrollbar-track {
+	background-color : var(--color-4);
+}
+
+
+.scrollModification::-webkit-scrollbar-thumb {
+	background-color: var(--color-3);
+	border: 1px solid white;
+
 }
