@@ -20,10 +20,28 @@ const portfolio = {
 	},
 	sectionAbout(aboutMe){
 		if(aboutMe.type == "description"){
+			const buttonLink = (aboutMe)=>{
+				if(aboutMe.link != null){
+					return `
+						<div class="mt-2 mr-auto flex w-full">
+							<a href="${aboutMe.link}" class=" mr-auto mt-2 text-color-4 border border-4 border-color-4 p-2  shadow-inner flex">
+								Halaman Sertifikasi
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto ml-2 shadow-inner" viewBox="0 0 20 20" fill="currentColor">
+								  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+								</svg>
+							</a>
+						</div>`;
+				};
+				return "";
+			}
+
 			return `
 			<h3 class="break-word text-md text-justify font-h3 text-white h-auto max-h-3/6 max-rows">
 				${aboutMe.description}
-			</h3>`
+			</h3>
+			${buttonLink(aboutMe)}
+			`
+
 		}else if(aboutMe.type == 'list'){
 			let LITemp = ``;
 			aboutMe.list.forEach((e)=>{
@@ -45,7 +63,7 @@ const portfolio = {
 				let LITempSkill = ``;
 				console.log(e)
 				e.skills.forEach((x)=>{
-					LITempSkill += `<li class="bg-color-4 text-color-2 text-center m-2 px-2 ">${x}</li>`;
+					LITempSkill += `<li class=" text-color-4 text-center m-2 px-2 ">${x}</li>`;
 				})
 				LITemp += `
 					<li class="w-full p-2 my-2 border border-2 border-color-4">

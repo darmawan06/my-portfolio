@@ -1,11 +1,11 @@
 import homepage from '../views/pages/homepage';
 import portfolio from '../views/pages/portfolio';
-import skills from '../views/pages/skills';
+import sertifikat from '../views/pages/sertifikat';
 
 const routes = {
     '/': homepage,
     '/portfolio': portfolio,
-    '/skills' : skills 
+    '/sertifikat' : sertifikat
 };
 
 export default routes;
